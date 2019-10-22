@@ -1,11 +1,11 @@
 ### Spring Cloud 例子合辑
 例子 | 实现功能 | 代码仓库
 --- | --- | ---
-Spring Cloud 集成 Consul（服务注册与发现） |  | https://github.com/cag2050/spring_cloud_consul_demos
 服务提供者(可以通过 java -jar 启动多个实例，用于负载均衡) | 1.使用 Spring Cloud Consul Config 来做服务配置中心 | https://github.com/cag2050/spring_cloud_consul_producer_demo.git
 使用 LoadBalancerClient 消费服务 |  | https://github.com/cag2050/spring_cloud_consul_consumer1_LoadBalancerClient_demo
-使用 Ribbon 消费服务 | 1.使用 Ribbon 消费服务；2.Ribbon 中引入 Hystrix； | https://github.com/cag2050/spring_cloud_consul_consumer2_ribbon_demo
-使用 Feign 消费服务 | 1.使用 Feign 消费服务；2.Feign 使用 Hystrix； | https://github.com/cag2050/spring_cloud_consul_consumer3_feign_demo
+使用 Ribbon 消费服务 | 1.使用 Ribbon 消费服务；2.Ribbon 中引入 Hystrix；3.引入 Hystrix Dashboard | https://github.com/cag2050/spring_cloud_consul_consumer2_ribbon_demo
+使用 Feign 消费服务 | 1.使用 Feign 消费服务；2.Feign 使用 Hystrix；3.引入 Hystrix Dashboard | https://github.com/cag2050/spring_cloud_consul_consumer3_feign_demo
+Hystrix Turbine，聚合显示多个服务的 Hystrix Dashboard 的数据 |  | https://github.com/cag2050/spring_cloud_consul_hystrix_turbine_demo
 Gateway 注册到服务中心 Consul，代理服务中心的所有服务 | | https://github.com/cag2050/spring_cloud_gateway_consul_demo
 Sleuth 微服务链路追踪 | Sleuth 结合 Zipkin，实现微服务链路追踪；Elasticsearch 保存链路数据；Kibana 展示链路数据 | https://github.com/cag2050/spring_cloud_consul_sleuth_zipkin_demo
 Spring Cloud Stream 使用 RabbitMQ |  | https://github.com/cag2050/spring_cloud_stream_rabbitmq_demo
@@ -26,7 +26,7 @@ http://localhost:8500/
 ```
 
 ### 总体步骤二：依次创建项目
-1.依次创建项目：服务提供者、各个消费端
+1.依次创建项目，创建步骤详见各项目 README.md 说明
 
 ### 参考
 资料 | 网址
